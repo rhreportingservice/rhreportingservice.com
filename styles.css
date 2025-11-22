@@ -1,39 +1,128 @@
 /* Basic reset and simple, clean layout */
-:root{
-  --max-width: 900px;
-  --accent: #0a5a78;
-  --muted: #666;
-  --bg: #ffffff;
+:root {
+    --max-width: 900px;
+    --accent: #0a5a78;
+    --muted: #666;
+    --bg: #eef6fb; /* soft, neutral blue background */
 }
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color:#111;
-  background:var(--bg);
-  line-height:1.5;
+
+* {
+    box-sizing: border-box
 }
-.container{max-width:var(--max-width);margin:0 auto;padding:20px}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.site-header{border-bottom:1px solid #eee;padding:16px 0}
-.logo{width:150px;height:70px;border:2px dashed #ccc;border-radius:6px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:600;color:#333}
-.logo-sub{display:block;font-size:11px;color:var(--muted);font-weight:400}
-.contact{text-align:right;font-size:14px}
-.contact a{color:var(--accent);text-decoration:none}
-h1{font-size:28px;margin:18px 0 8px}
-h2{font-size:18px;margin:12px 0}
-.about p{margin:0 0 12px}
-.services ul{list-style:disc;margin:0 0 16px 20px;padding:0}
-.cta p{margin:6px 0}
-.site-footer{border-top:1px solid #f0f0f0;padding:12px 0;margin-top:28px;color:var(--muted);font-size:14px}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #111;
+    background: var(--bg);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.site-header {
+    border-bottom: 1px solid #eee;
+    padding: 16px 0
+}
+
+.logo {
+    width: 150px;
+    height: 70px;
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    color: #333
+}
+
+.logo-sub {
+    display: block;
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 400
+}
+
+.contact {
+    text-align: right;
+    font-size: 14px
+}
+
+.contact a {
+    color: var(--accent);
+    text-decoration: none
+}
+
+h1 {
+    font-size: 28px;
+    margin: 18px 0 8px
+}
+
+h2 {
+    font-size: 18px;
+    margin: 12px 0
+}
+
+.about p {
+    margin: 0 0 12px
+}
+
+.services ul {
+    list-style: disc;
+    margin: 0 0 16px 20px;
+    padding: 0
+}
+
+.cta p {
+    margin: 6px 0
+}
+
+.site-footer {
+    border-top: 1px solid #f0f0f0;
+    padding: 12px 0;
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 14px
+}
 
 /* Responsive adjustments */
-@media (max-width:640px){
-  .header-inner{flex-direction:column;align-items:flex-start;gap:12px}
-  .contact{text-align:left}
-  .logo{width:100%;height:auto;padding:12px}
+@media (max-width:640px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px
+    }
+
+    .contact {
+        text-align: left
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        padding: 12px
+    }
 }
 
 /* Small accessibility touches */
-a:focus{outline:3px solid rgba(10,90,120,0.12);outline-offset:2px}
+a:focus {
+    outline: 3px solid rgba(10, 90, 120, 0.12);
+    outline-offset: 2px
+}
